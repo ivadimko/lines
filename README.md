@@ -1,3 +1,5 @@
+inspirated by [Akella](https://github.com/akella/murmure.me)
+
 [DEMO](https://ivadimko.github.io/lines/build/page.html)
 
 #How to use
