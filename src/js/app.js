@@ -45,11 +45,13 @@ class Background {
   }
   drawParticles() {
     for (let i = 0; i < this.particlesCount; i++) {
-	    let radius = Math.sqrt(this.height/2*this.height/2*Math.random());
-	    let angle = 2*Math.PI*Math.random();
-
-	    let x = this.width/2 + radius*Math.sin(angle);
-	    let y = this.height/2 + radius*Math.cos(angle);
+	    // let radius = Math.sqrt(this.height/2*this.height/2*Math.random());
+	    // let angle = 2*Math.PI*Math.random();
+	    //
+	    // let x = this.width/2 + radius*Math.sin(angle);
+	    // let y = this.height/2 + radius*Math.cos(angle);
+	    let x = this.width*Math.random();
+	    let y = this.height*Math.random();
       this.particles.push(new Particle(this.ctx, x, y));
 
     }

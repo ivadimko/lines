@@ -24,7 +24,7 @@ export default class {
     this.velocity = vec2.fromValues(0, 0);
     this.maxForce = 0.05;
     this.maxSpeed = 5;
-    this.maxDist = 50;
+    this.maxDist = 150;
   }
 
   update() {
@@ -62,7 +62,7 @@ export default class {
     if (vec2.length(dist) < this.maxDist) {
       let force = vec2.create();
       setmag(dist, dist, this.maxSpeed);
-      dist = vec2.scale(dist, dist, -1);
+      dist = vec2.scale(dist, dist, 1);
       vec2.subtract(force, dist, this.velocity);
       limit(force, force, this.maxForce);
       return force;
