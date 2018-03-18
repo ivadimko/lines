@@ -1,3 +1,5 @@
+[DEMO](https://ivadimko.github.io/lines/build/page.html)
+
 #How to use
 
 Clone this repo and then in command line type:
